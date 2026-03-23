@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.navigation {
+    border: red solid 2px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo {
+    margin-left: 1vw;
+    width: 150px;
+    height: 70px;
+    object-fit: cover;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2vw;
+}
+
+.log-in-sign-up {
+    display: flex;
+    gap: 1vw;
+    margin-right: 1vw;
+}
