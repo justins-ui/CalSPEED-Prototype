@@ -1,10 +1,10 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: 'Figtree', sans-serif;
 }
 
 .navigation {
-    border: red solid 2px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -18,12 +18,99 @@ body {
 }
 
 .nav-links {
+    align-items: center;
     display: flex;
     gap: 2vw;
 }
 
 .log-in-sign-up {
+    align-items: center;
     display: flex;
     gap: 1vw;
     margin-right: 1vw;
+}
+
+.nav-links a {
+    color: black;
+    font-size: 17px;
+    letter-spacing: 2.04%;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.hamburger-menu {
+    display: none;
+}
+
+.sign-up {
+    color: white;
+    background-color: #103F85;
+    font-size: 17px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 21px;
+    padding-right: 21px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.close-button {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: flex;
+        margin-right: 1vw;
+        cursor: pointer;
+    }
+
+    .nav-links.active-links {
+        display: flex;
+        position: fixed;
+        top: 0;
+        right: 0;
+        gap: 4dvh;
+        width: 100vw;
+        height: 100dvh;
+        justify-content: center;
+        flex-direction: column;
+        background-color: rgba(153, 204, 255, 0.8);
+        z-index: 1000;
+    }
+
+    .nav-links a {
+        font-size: 22px;
+        letter-spacing: 2.4%;
+    }
+
+    .log-in-sign-up {
+        gap: 2vw;
+    }
+
+    .sign-up {
+        font-size: 22px;
+        letter-spacing: 2.4%;
+    }
+
+    .close-button {
+        display: flex;
+        position: absolute;
+        top: 1dvh;
+        right: 1vw;
+        cursor: pointer;
+    }
+
+    .close-button img {
+        width: 50px;
+        height: 50px;
+    }
 }
